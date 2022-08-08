@@ -244,23 +244,43 @@
                 value = getValue(current);
 
                 switch (action) {
-                    case 'countdown':
-                        value = parseInt(value) || 10;
-                        value = value > 0 ? value : 10;
+                    // case 'countdown':
+                    //     value = parseInt(value) || 10;
+                    //     value = value > 0 ? value : 10;
+                    //
+                    //     timedAction(function (index) {
+                    //         if (index === 0) {
+                    //             if (sequence.length === 0) {
+                    //                 S.Shape.switchShape(S.ShapeBuilder.letter(''));
+                    //             } else {
+                    //                 window.open('result.html', '_self');
+                    //                 performAction(sequence);
+                    //             }
+                    //         } else {
+                    //             S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
+                    //         }
+                    //     }, 1000, value, true);
+                    //     break;
 
-                        timedAction(function (index) {
-                            if (index === 0) {
-                                if (sequence.length === 0) {
-                                    S.Shape.switchShape(S.ShapeBuilder.letter(''));
-                                } else {
-                                    window.open('result.html', '_self');
-                                    performAction(sequence);
-                                }
-                            } else {
-                                S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
-                            }
-                        }, 1000, value, true);
+
+                     case 'countdown':
+                     //    value = parseInt(value) || 10;
+                     //    value = value > 0 ? value : 10;
+
+                        // timedAction(function (index) {
+                            // if (index === 0) {
+                            //     if (sequence.length === 0) {
+                            //         S.Shape.switchShape(S.ShapeBuilder.letter(''));
+                            //     } else {
+                            //         window.open('result.html', '_self');
+                            //         performAction(sequence);
+                            //     }
+                            // } else {
+                            //     S.Shape.switchShape(S.ShapeBuilder.letter(index), true);
+                            // }
+                        // }, 1000, value, true);
                         break;
+
 
                     case 'rectangle':
                         value = value && value.split('x');
